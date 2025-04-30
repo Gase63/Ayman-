@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المركز الأكاديمي المتكامل | خدمات البحث العلمي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: scale(1.05);
+        }
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            margin-left: 15px;
+            color: white;
+            transition: all 0.3s;
+        }
+        .social-icon:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>المركز الأكاديمي
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">آراء العملاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">التميز الأكاديمي يبدأ هنا</h1>
+            <p class="lead mb-5">نقدم حلولاً بحثية متكاملة لطلبة الماجستير والدكتوراه ونشر الأبحاث في المجلات العلمية المحكمة</p>
+            <a href="https://wa.me/+966583788448" class="whatsapp-btn">
+                <i class="fab fa-whatsapp me-2"></i>تواصل عبر واتساب
+            </a>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="fw-bold">خدماتنا الأكاديمية</h2>
+                <p class="text-muted">نقدم مجموعة متكاملة من الخدمات لدعم الباحثين وطلبة الدراسات العليا</p>
+            </div>
+            
+            <div class="row">
+                <!-- خدمة 1 -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>إعداد رسائل الماجستير</h4>
+                        <p>مساعدتك في إعداد الرسالة من الفكرة حتى المناقشة النهائية مع مراعاة أعلى معايير الجودة</p>
+                        <ul class="text-start mt-3">
+                            <li>صياغة عنوان البحث</li>
+                            <li>إعداد الإطار النظري</li>
+                            <li>التحليل الإحصائي</li>
+                            <li>التدقيق اللغوي</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- خدمة 2 -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4>إعداد أطروحات الدكتوراه</h4>
+                        <p>دعم متكامل لأطروحات الدكتوراه وفق منهجية علمية صارمة وتخصص دقيق</p>
+                        <ul class="text-start mt-3">
+                            <li>بناء الإطار المفاهيمي</li>
+                            <li>تصميم منهجية البحث</li>
+                            <li>تحليل البيانات المتقدمة</li>
+                            <li>إعداد للدفاع العلمي</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- خدمة 3 -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>نشر الأبحاث العلمية</h4>
+                        <p>نشر أبحاثك في مجلات علمية محكمة ذات معامل تأثير عالي</p>
+                        <ul class="text-start mt-3">
+                            <li>تحكيم وتدقيق البحث</li>
+                            <li>تنسيق حسب متطلبات المجلة</li>
+                            <li>ترجمة احترافية</li>
+                            <li>متابعة حتى النشر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <!-- خدمة 4 -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>التحليل الإحصائي</h4>
+                        <p>تحليل بياناتك باستخدام أحدث البرامج الإحصائية (SPSS, AMOS, R, Python)</p>
+                        <ul class="text-start mt-3">
+                            <li>تحليل وصفي واستدلالي</li>
+                            <li>نمذجة المعادلات البنائية</li>
+                            <li>تحليل السلاسل الزمنية</li>
+                            <li>عرض النتائج باحترافية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- خدمة 5 -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4>الترجمة الأكاديمية</h4>
+                        <p>ترجمة احترافية لأبحاثك وملخصاتك بأعلى معايير الدقة العلمية</p>
+                        <ul class="text-start mt-3">
+                            <li>ترجمة من/إلى الإنجليزية</li>
+                            <li>تدقيق لغوي متخصص</li>
+                            <li>تنسيق المراجع</li>
+                            <li>تجنب الانتحال العلمي</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- خدمة 6 -->
+                <div class="col-md-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>التدقيق والمراجعة</h4>
+                        <p>مراجعة شاملة لبحثك من قبل متخصصين في مجال دراستك</p>
+                        <ul class="text-start mt-3">
+                            <li>تدقيق منهجي</li>
+                            <li>تصحيح الأخطاء اللغوية</li>
+                            <li>مراجعة المراجع</li>
+                            <li>ضمان الجودة العلمية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="fw-bold mb-4">من نحن</h2>
+                    <p class="lead">نحن فريق من الأكاديميين والباحثين المتخصصين في مختلف المجالات العلمية، نقدم خدمات بحثية عالية الجودة لطلبة الدراسات العليا والباحثين.</p>
+                    <p>تأسس المركز عام 2010، ومنذ ذلك الحين ساعدنا أكثر من 1500 باحث في إنجاز أبحاثهم ونشرها في مجلات عالمية مرموقة.</p>
+                    <p>نفتخر بفريقنا المكون من:</p>
+                    <ul>
+                        <li>أعضاء هيئة تدريس من جامعات سعودية وعالمية</li>
+                        <li>متخصصين في مناهج البحث العلمي</li>
+                        <li>خبراء في التحليل الإحصائي</li>
+                        <li>مترجمين معتمدين</li>
+                    </ul>
+                    <a href="https://wa.me/+966583788448" class="whatsapp-btn mt-3">
+                        <i class="fab fa-whatsapp me-2"></i>استفسر عن خدماتنا
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="فريق العمل" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="fw-bold">آراء عملائنا</h2>
+                <p class="text-muted">ما قاله بعض عملائنا عن خدماتنا</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"ساعدوني في إنجاز رسالة الماجستير في وقت قياسي بجودة عالية، فريق محترف جداً."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="عميل" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">د. أحمد السعدي</h6>
+                                <small class="text-muted">ماجستير إدارة أعمال</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"نشرت بحثين في مجلات Q1 بفضل الدعم المتميز الذي تلقيتة من الفريق."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="عميلة" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">د. سارة الناصر</h6>
+                                <small class="text-muted">دكتوراه في التربية</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                        <p class="mb-3">"التحليل الإحصائي كان دقيقاً ومفصلاً، ساعدني في فهم نتائج بحثي بشكل أعمق."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="عميل" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">م. خالد الحربي</h6>
+                                <small class="text-muted">ماجستير هندسة</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تواصل معنا -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="fw-bold mb-4">تواصل معنا</h2>
+                    <p class="mb-4">نحن هنا لمساعدتك في رحلتك الأكاديمية، تواصل معنا عبر أي من القنوات التالية:</p>
+                    
+                    <div class="contact-info mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-whatsapp fa-2x me-3 text-success"></i>
+                            <div>
+                                <h5 class="mb-0">واتساب</h5>
+                                <a href="https://wa.me/+966583788448" class="text-decoration-none">+966 58 378 8448</a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope fa-2x me-3 text-primary"></i>
+                            <div>
+                                <h5 class="mb-0">البريد الإلكتروني</h5>
+                                <a href="mailto:info@example.com" class="text-decoration-none">info@example.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h5 class="mb-3">تابعنا على</h5>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="اسمك الكريم" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="رقم هاتفك (اختياري)">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected>اختر الخدمة المطلوبة</option>
+                                <option>إعداد رسائل الماجستير</option>
+                                <option>إعداد أطروحات الدكتوراه</option>
+                                <option>نشر الأبحاث العلمية</option>
+                                <option>التحليل الإحصائي</option>
+                                <option>الترجمة الأكاديمية</option>
+                                <option>التدقيق والمراجعة</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="رسالتك"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">المركز الأكاديمي المتكامل</h5>
+                    <p>رؤيتنا هي تمكين الباحثين وطلبة الدراسات العليا من تحقيق التميز الأكاديمي عبر خدمات بحثية عالية الجودة.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">خدماتنا</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">من نحن</a></li>
+                        <li class="mb-2"><a href="#testimonials" class="text-white text-decoration-none">آراء العملاء</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">طرق الدفع</h5>
+                    <div>
+                        <i class="fab fa-cc-visa fa-2x me-2"></i>
+                        <i class="fab fa-cc-mastercard fa-2x me-2"></i>
+                        <i class="fab fa-cc-paypal fa-2x me-2"></i>
+                        <i class="fas fa-money-bill-wave fa-2x"></i>
+                    </div>
+                    <p class="mt-3">نقبل جميع طرق الدفع الإلكتروني الآمنة</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <p class="mb-0">&copy; 2023 المركز الأكاديمي المتكامل. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
